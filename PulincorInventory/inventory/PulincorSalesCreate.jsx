@@ -259,7 +259,7 @@ const PulincorSalesCreate = ({ sale }) => {
                             <View style={{ width: '100%' }}>
                                 <Text style={decor.emptyText}>There are no arrivals here, you can add them now</Text>
                                 <TouchableOpacity
-                                    style={createForm.doneBtn}
+                                    style={[createForm.doneBtn, {marginTop: 30}]}
                                     onPress={() => navigation.navigate('PulincorArrivalsCreate')}
                                 >
                                     <Text style={createForm.doneBtnText}>Create an object</Text>
