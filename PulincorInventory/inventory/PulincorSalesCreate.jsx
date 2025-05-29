@@ -123,7 +123,7 @@ const PulincorSalesCreate = ({ sale }) => {
                     pulincorWarehouseArrivals.length > 0 ? (
                         <View style={{ width: '100%' }}>
                             
-                             <View style={{width: '100%', height: 150, marginBottom: 12}}>
+                             <View style={{width: '100%', height: 170, marginBottom: 12}}>
                                 <ScrollView horizontal>
                                     {
                                         pulincorWarehouseArrivals.map((item, idx) => (
@@ -133,7 +133,7 @@ const PulincorSalesCreate = ({ sale }) => {
                                                     style={card.cover}
                                                 />
                                                 <View style={{width: '58%', height: '100%'}}>
-                                                    <Text style={card.title}>{item.productname}</Text>
+                                                    <Text style={card.title} numberOfLines={1} ellipsizeMode="tail">{item.productname}</Text>
                                                     <Text style={card.quantity}>{item.quantity} pcs in stock</Text>
                                                     <TouchableOpacity
                                                         style={[card.readBtn, selectedArrival === item.id && {backgroundColor: '#d9490b'}]}

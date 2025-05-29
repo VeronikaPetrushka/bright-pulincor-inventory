@@ -183,12 +183,12 @@ const PulincorWarehouse = () => {
                             pulincorWarehouseArrivals.some((item) => item.supplier) && (
                                 <>
                                     <Text style={createForm.label}>Supplier</Text>
-                                    <View style={createForm.row}>
+                                    <View style={[createForm.row, {flexWrap: 'wrap'}]}>
                                         {
                                             pulincorWarehouseArrivals.map((item, idx) => (
                                             <TouchableOpacity
                                                 key={idx}
-                                                style={[createForm.categoryBtn, filterBySupplier === item.supplier && {backgroundColor: '#F301F3'}]}
+                                                style={[createForm.categoryBtn, filterBySupplier === item.supplier && {backgroundColor: '#F301F3'}, {marginBottom: 7}]}
                                                 onPress={() => filterBySupplier === item.supplier ? setFilterBySupplier(null) : setFilterBySupplier(item.supplier)}
                                             >
                                                 <Text style={[createForm.categoryBtnText,

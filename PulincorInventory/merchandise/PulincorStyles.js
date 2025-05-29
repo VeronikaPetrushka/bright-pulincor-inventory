@@ -101,7 +101,7 @@ export const decor = StyleSheet.create({
     toolsContainer: {
         position: 'absolute',
         right: 16,
-        bottom: height * 0.15,
+        bottom: height > 700 ? height * 0.15 : height * 0.17,
         alignItems: 'center',
         zIndex: 10
     },
@@ -422,7 +422,7 @@ export const game = StyleSheet.create({
         flexGrow: 1,
         alignItems: 'center',
         paddingHorizontal: 16,
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
 
     title: {

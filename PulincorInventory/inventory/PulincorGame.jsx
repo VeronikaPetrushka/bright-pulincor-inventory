@@ -224,7 +224,7 @@ const PulincorGame = () => {
 
                 {
                     (gameFinished) && (
-                        <View style={game.welcome}>
+                        <View style={[game.welcome, {paddingBottom: 100}]}>
                             
                             <Text style={game.title}>GAME OVER</Text>
 
