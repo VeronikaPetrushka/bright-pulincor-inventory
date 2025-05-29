@@ -10,7 +10,7 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.bright.pulincor.inventory.2025
       vars:
-        APP_STORE_APPLE_ID: 6746097025 #change
+        APP_STORE_APPLE_ID: 6746539588
         BUNDLE_ID: 'com.bright.pulincor.inventory.2025'
         XCODE_WORKSPACE: 'BrightPulincorInventory.xcworkspace'
         XCODE_SCHEME: 'BrightPulincorInventory'

@@ -1,5 +1,3 @@
-// change privacy link
-
 import React, { useEffect, useState } from "react";
 import { View, ScrollView, Image, Text, Switch, Linking, TouchableOpacity } from "react-native";
 import PulincorHeadTitle from "../workers/PulincorHeadTitle";
@@ -115,7 +113,7 @@ const PulincorSettings = () => {
                     <Text style={settings.title}>Privacy Policy</Text>
                     <TouchableOpacity
                         style={{position: 'absolute', top: 2, right: 0}}
-                        onPress={() => Linking.openURL('https://your-privacy-policy-url.com')} // change link
+                        onPress={() => Linking.openURL('https://www.termsfeed.com/live/730f7e6e-6f81-4eae-ab04-e4d0796d107d')}
                     >
                         <Image
                             source={backArrow}
